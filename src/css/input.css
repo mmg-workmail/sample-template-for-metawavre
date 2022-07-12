@@ -20,7 +20,7 @@
         @apply relative z-0 w-screen h-screen overflow-y-auto;
     }
     ._container{
-        @apply lg:container lg:mx-auto 
+        @apply lg:container lg:mx-auto  mx-2
     }
     ._container-mx{
         @apply mx-2 lg:mx-auto;
@@ -199,7 +199,7 @@
         @apply col-span-4
     }
     .platform-box-item{
-        @apply bg-rectangle-platform w-[180px] h-[180px] lg:w-[200px] lg:h-[200px] flex place-items-center justify-center bg-contain my-5 _transition hover:platform-box-item-hover
+        @apply bg-rectangle-platform w-[140px] h-[140px] lg:w-[200px] lg:h-[200px] flex place-items-center justify-center bg-contain my-5 _transition hover:platform-box-item-hover
     }
     .platform-box-item.active {
         @apply platform-box-item-hover
@@ -234,10 +234,10 @@
     
     /* Investor */
     .investor-row{
-        @apply flex grid-cols-8 gap-6
+        @apply grid grid-cols-3 md:grid-cols-6 gap-6 justify-center
     }
     .investor-col{
-        @apply flex items-center content-center
+        @apply flex col-span-1 items-center content-center
     }
     .investor-col img{
         
